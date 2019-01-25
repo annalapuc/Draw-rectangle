@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Rectangle {
+    public static void main (String[] args){
+        Scanner in=new Scanner(System.in);
+        System.out.println("To draw a rectangle, enter the coordinates od the upper left corner od rectangle (x,y): ");
+        int x=in.nextInt();
+        int y=in.nextInt();
+
+        System.out.println("Enter the length of the sides of the rectangle (ab):");
+        int a=in.nextInt();
+        int b=in.nextInt();
+
+        for (int l=0; l<x; l++)
+        {
+            int c=b+y;
+            for (int i=x; i<a; i++)
+             {
+                 for (int k=0; k<y; k++)
+                 {
+                     System.out.print("-");
+                 }
+
+                 for (int j=y; j<c; j++)
+                     {
+                        System.out.print('X');
+                     }
+                 System.out.println();
+        }
+    }}
+}
